@@ -21,7 +21,7 @@ public class UserServiceTest {
         // TODO : Appel de la méthode à tester
             mock.creerUtilisateur(utilisateur);
         // TODO : Vérification de l'appel à l'API
-            verify(utilisateurApiMock,times(0)).creerUtilisateur(utilisateur);
+            verify(utilisateurApiMock,times(0)).creerUtilisateur(utilisateur); // on peut remplacer times(0) par never()
             //par rapport le service
             verify(mock,times(1)).creerUtilisateur(utilisateur);
     }
